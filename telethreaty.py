@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-threaty_bot - Advanced Telegram message fetcher with permission management
+telethreaty - Advanced Telegram message fetcher with permission management
 """
 
 import argparse
@@ -15,7 +15,7 @@ from datetime import datetime
 import sys
 from pathlib import Path
 
-class ThreatyBot:
+class TeleThreaty:
     def __init__(self, token, timeout=30, download_dir="downloads"):
         self.token = token
         self.timeout = timeout
@@ -639,7 +639,7 @@ class ThreatyBot:
         
         while True:
             print("\n" + "="*50)
-            print("          THREATY BOT - MAIN MENU")
+            print(" TELETHREATY BOT - MAIN MENU")
             print("="*50)
             print("1. 📋 Display Bot & Chat Information")
             print("2. 📥 Show Received Messages")
@@ -765,7 +765,7 @@ def main():
         sys.exit(1)
     
     # Initialize bot
-    bot = ThreatyBot(token)
+    bot = TeleThreaty(token)
     
     # Test connection
     bot_info = bot.get_bot_info()
